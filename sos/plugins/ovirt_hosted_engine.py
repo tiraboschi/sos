@@ -53,6 +53,7 @@ class OvirtHostedEngine(Plugin, RedHatPlugin):
             '/etc/ovirt-hosted-engine-ha/broker-log.conf',
             '/etc/ovirt-hosted-engine-ha/notifications/state_transition.txt',
             '/var/run/ovirt-hosted-engine-ha/vm.conf',
+            '/var/lib/ovirt-hosted-engine-ha/broker.conf',
         ])
 
         all_setup_logs = glob.glob(self.SETUP_LOG_GLOB)
